@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REAL LIVING</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body, html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-image: url(cement.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-left: 30px; 
+    margin-right: 30px;
+}
+h1 {
+     font-size: 50px;
+     color: #404142;
+     margin-top: 0%;
+}
+    </style>
+</head>
+
+<body>
+    <a id="top"></a>
+    <header>
+        <div class="logo">
+            <img src="houselogo.png" alt="logo" width="70" height="70">
+            <h1><em>Welcome Home</em><br><span style="font-size: 60px;"><BIG>REAL LIVING</BIG></span> Real Estate</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="reyes_ex2.html">Home</a></li>
+              <li><a href="page2.html">Properties</a></li>
+              <li><a href="Exteriors.html">Buy & Sell</a></li>
+              <li><a href="Locations.html">Locations</a></li>
+              <li><a href="page3.html">Inquire</a></li>
+            </ul>
+          </nav>
+          <hr size="3" noshade=""/>
+    </header>
+
+   <section>
+          <center><h1>Inquiry Form</h1></center>
+     <div class="form">
+       
+          <form action="mailto:estaterealliving@gmail.com" method="post" autocomplete="on">
+            <fieldset>
+               <legend class="Pi"><b>Personal Information:</b></legend><br>
+               <label for="name">Full Name:</label> <br> 
+               <input type="text" name="name" id="name" required maxlength=40 size="40"> <br><br>
+               <label for="addr">Address:</label> <br>
+               <input type="text" id="addr" required maxlength=40 size="40"> <br> <br>
+               <label for="occupation">Occupation:</label> <br>
+               <input type="text" id="occupation" name="occupation" required maxlength=40 size="40"><br><br>
+               <label for="education">Highest Education Level:</label> <br>
+               <input type="text" id="education" name="education"  maxlength=40 size="40" placeholder="enter your highest education level"><br><br>
+               <label for="social">Social Media Profile:</label> <br>
+               <input type="text" id="social" name="social" maxlength=40 size="40" placeholder="Enter your social media profile"><br><br>
+
+               <label for="age">Age Group:</label> <br>
+               <input type="radio" name="age_group" id="18" checked>
+               <label for="18"> Below 18</label> <br>
+               <input type="radio" name="age_group" id="18-36">
+               <label for="18-36"> 18 to 36</label> <br>
+               <input type="radio" name="age_group" id="37-64">
+               <label for="37-64"> 37 to 64</label> <br>
+               <input type="radio" name="age_group" id="65">
+               <label for="65"> 65 and Above</label> <br><br>
+
+               <label for="gender">Gender:</label>
+               <input type="radio" name="gender" id="male" checked>
+               <label for="male">Male</label>
+               <input type="radio" name="gender" id="female">
+               <label for="female">Female</label>
+               <input type="radio" name="gender" id="not">
+               <label for="not">Rather not say</label><br><br>
+
+               <label>Preferred Contact Method:</label>
+               <input type="radio" id="contact_email" name="contact_method" value="email" checked>
+               <label for="contact_email">Email</label>
+               <input type="radio" id="contact_phone" name="contact_method" value="phone">
+               <label for="contact_phone">Phone</label> <br> <br>
+               <label for="phone">Phone Number:</label> <br>
+               <input type="text" name="phone" id="phone" maxlength=30 size="30"> <br>
+               <label for="email">Email:</label> <br>
+               <input type="email" name="email" id="email" maxlength=30 size="30">
+            </fieldset> <br> <br>
+
+            <fieldset>
+               <legend class="Pi"><b>Inquire:</b></legend> <br>
+                    <label for="htype">Preferred house type like:</label>
+                         <select name="htype" id="htype">
+                              <option value="mansion">Mansion</option>
+                              <option value="condo">Condo</option>
+                              <option value="palace">Palace</option>
+                              <option value="bungalow">Bungalow</option>
+                              <option value="townhouse">Townhouse</option>
+                         </select> <br> <br>
+
+                    <label for="hsize">Preferred property size:</label>
+                         <select name="hsize" id="hsize">
+                              <option value="intimate">Intimate</option>
+                              <option value="cozy">Cozy</option>
+                              <option value="compact">Compact</option>
+                              <option value="generous">Generous</option>
+                              <option value="spacious">Spacious</option>
+                         </select> <br> <br>
+                    <label for="architectural">Preferred Architectural Style:</label>
+                         <select id="architectural" name="architectural">
+                           <option value="modern">Modern</option>
+                           <option value="traditional">Traditional</option>
+                           <option value="contemporary">Contemporary</option>
+                           <option value="colonial">Colonial</option>
+                         </select><br><br>
+
+                    <label for="nroom">Preferred number of rooms:</label>
+                         <input type="number" id="nroom" style="width: 50px;"> <br> <br>
+                    
+                    <label for="broom">Preferred number of bathrooms:</label>
+                         <input type="number" id="broom" style="width: 50px;"> <br> <br>
+                    
+                    <label for="budget">What is your budget?</label>
+                         <input list="budget_options" id="budget" name="budget" required placeholder="Select or input your budget">
+                              <datalist id="budget_options">
+                                   <option value="Below &#8369; 2 Million"></option>
+                                   <option value="Between &#8369; 2.1 to 5 Million"></option>
+                                   <option value="Between &#8369; 5.1 to 10 Million"></option>
+                                   <option value="Above &#8369; 10 Million"></option>
+                               </datalist> <br> <br>
+                    <label for="income">Monthly Income:</label>
+                         <input type="text" id="income" name="income" maxlength=30 size="30" placeholder="Enter your monthly income"><br>
+                    <br>
+                    <label for="sched">Schedule a meeting:</label> 
+                         <input type="date" name="sched" id="sched"> <br><br>
+
+                     <label for="reason">Reason for moving:</label> <br>
+                         <textarea name="reason" id="reason" cols="40" rows="8">Put your reason here</textarea> <br><br>
+               
+                    <label for="future">Reason for moving: <i>(optional)</i></label> <br>
+                         <textarea name="future" id="future" cols="40" rows="8">Put your answer here</textarea>
+            </fieldset> <br> <br>
+
+            <fieldset>
+               <legend class="Pi"><b>Additional:</b></legend> <br>
+                    <label for="feats">Property features:</label> <br>
+                         <input type="checkbox" value="pool" name="property_feature" id="pool">
+                              <label for="pool">Swimming Pool</label> <br>
+                         <input type="checkbox" value="gym" name="property_feature" id="gym">
+                              <label for="gym">Gym</label> <br>
+                         <input type="checkbox" value="garden" name="property_feature" id="garden">
+                              <label for="garden">Garden</label> <br>
+                         <input type="checkbox" value="t-ceilling" name="property_feature" id="t-ceilling">
+                              <label for="t-ceilling">Tall Ceillings</label> <br>
+                         <input type="checkbox" value="x-storage" name="property_feature" id="x-storage">
+                              <label for="x-storage">Extra storage space</label> <br>
+                         <input type="text" id="feats" placeholder="others"> <br><br>
+
+                    <label for="p-environment">Preferred Environment:</label> <br>
+                         <input type="checkbox" value="peaceful" id="peace" name="p-environment">
+                              <label for="peace">Peaceful</label> <br>
+                         <input type="checkbox" value="coastal-town" id="c-town" name="p-environment">
+                              <label for="c-town">Coastal Town</label> <br>
+                         <input type="checkbox" value="nature" id="nature" name="p-environment">
+                              <label for="nature">Nature</label> <br>
+                         <input type="checkbox" value="urban" id="urban" name="p-environment">
+                              <label for="urban">Urban</label> <br>
+                         <input type="checkbox" value="rural" id="rural" name="p-environment">
+                              <label for="rural">Rural</label> <br>
+                         <input type="text" id="p-environment" placeholder="others"> <br><br>
+
+                    <label for="x-details">Provide details or images for interior designs suggestion <span style="color: red;">
+                         <i>(optional)</i></span></label> <br>
+                    <textarea name="x-details" id="x-details" cols="40" rows="8"></textarea> <br>
+                    <input type="file" id="x-details">
+            </fieldset> <br><br>
+
+            <fieldset>
+               <legend class="Pi"><b>Consent & Agreement:</b></legend> <br>
+                    <label for="agreed">By submitting this inquiry form, you acknowledge and agree to the terms and conditions outlined 
+                          by Real Living Real Estate. You understand that the information provided will be used to respond to your inquiry
+                          and to provide you with relevant information about our real estate services. Additionally, you consent to being 
+                          contacted via the provided email address or phone number for communication purposes related to your inquiry.
+                          Real Living Real Estate is committed to safeguarding your privacy, and any personal information collected will 
+                          be handled in accordance with our privacy policy. Please take a moment to review our terms and conditions and 
+                          privacy policy, which can be found on our website. If you do not agree with these terms, kindly refrain from 
+                          submitting this form. Your privacy and satisfaction are of utmost importance to us.</label> <br>
+                    <p><i><span style="color: rgb(0, 4, 255);">Check the box if you agree to our terms and conditions:</span></i> &nbsp; 
+                         <input type="checkbox" name="agreed" id="agreed" class="agr" required>
+                    </p> 
+                    
+            </fieldset> <br> <br>
+
+            <input type="submit" value="Submit"> &nbsp; &nbsp; <input type="reset" value="Reset">
+          </form>
+     
+     </div>
+     <br />
+     <br />
+     <br />
+     <br />
+    <div class="review">
+          <form method="post" action="mailto:estaterealliving@gmail.com">
+               <fieldset>
+                    <legend>Review:</legend>
+               <p><label for="where">Where did you learn about this website?</label></p> <br>
+               <input type="text" id="where" maxlength="50" size="50"> <br><br>
+               <p><label for="issues">Have you encountered any challenges or struggles while using our website?</label></p><br>
+               <input type="text" id="issues"  maxlength="50" size="50"><br><br>
+               <p><label for="review">Leave a comment for improvements of the website:</label></p>
+               <textarea id="review" name="review" rows="8" cols="50" placeholder="What must be improved?"></textarea>
+               <br>
+               <input type="submit" value="Submit">
+               </fieldset>
+          </form>
+    </div>
+     <br>
+     <br>
+     <br>
+     <br>
+        <a href="#top" class="top">Back to top</a>
+   </section>
+
+
+   <footer style="color: black;">
+    <hr size="3" noshade=""/>
+    <center> <span style="padding-bottom: 13px;">@Copyright 2023<br> All Rights Reserved</span> </center>
+   </footer>
+</body>
+</html>

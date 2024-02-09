@@ -1,0 +1,408 @@
+body{
+    color: rgb(48, 46, 46);
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+}
+.logo h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+nav {
+    font-size: 20px; 
+    font-weight: 300;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    padding: 15px; 
+}
+nav li
+ a {
+    text-decoration: none; 
+    color: black; 
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+nav ul li ul.dropdown {
+    width: 100%;
+    z-index: 999;
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+nav ul li ul.dropdown li {
+    display: block;
+}
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+nav ul li:hover a {
+    background-color: #f0f0f0; 
+}
+nav ul li ul.dropdown li a {
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+nav ul li ul.dropdown li a:hover {
+    background-color: #ddd; 
+}
+/**/ /**/ /**/ /**/ /**/
+.rcnt b {
+    font-size: 55px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(48, 46, 46);
+    margin-bottom: 0;
+}
+.practice {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.houses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 80%;
+}
+.house-container {
+    overflow: hidden;
+    width: 8%;
+    height: 80%;
+    transition: width 0.5s ease;
+}
+.house-container:hover {
+    width: 40%;
+    border-radius: 20px;
+}
+.haws image {
+    height: 100%;
+    object-fit: cover;
+}
+.houses img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; 
+}
+/**/ /**/ /**/ /**/ /**/
+.top {
+    padding-left: 10px;
+    text-decoration: wavy;
+    color: rgb(255, 5, 5);
+    font-size: 20px;
+    font-weight: 300;
+}
+.why li {
+    font-size: 25px;
+}
+/**/ /**/ /**/ /**/ /**/
+.head2 h5, .head2 h1, .head2 p {
+    text-align: center;
+    margin: 5px 0;
+    color: rgb(48, 46, 46);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head2 h5 {
+    font-size: 25px;
+}
+.head2 h1 {
+    font-size: 55px;
+    text-shadow: black 20px; 
+}
+/**/ /**/ /**/ /**/ /**/
+.cover {
+    max-width: 950px;
+    width: 100%;
+    margin: 50px auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+}
+.box {
+    width: calc((100% - 40px) / 3); 
+    height: 400px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    box-shadow: -2px 0 10px #000;
+    padding: 0 10px; 
+}
+.cover img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+    display: block; 
+    padding-top: 6px;
+}
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 100%; 
+    }
+}
+/**/ /**/ /**/ /**/ /**/
+.he {
+    padding-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    background-color: gray;
+    justify-content: center;
+    margin: 0;
+}
+area:hover {
+    outline: 2px solid rgb(88, 86, 86); 
+}
+.hi {
+    padding-top: 2px;
+    font-size: 14px;
+    text-align: center;
+    background-color: gray;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+img {
+    max-width: 100%; 
+    height: auto;
+}
+@media only screen and (max-width: 767px) {
+    map[name="floorplan"] area {
+        coords: 10%, 5%, 90%, 22%;
+    }
+
+    map[name="floorplan"] area:nth-child(2) {
+        coords: 10%, 23%, 90%, 38%;
+    }
+
+    map[name="floorplan"] area:nth-child(3) {
+        coords: 10%, 39%, 90%, 57%;
+    }
+
+    map[name="floorplan"] area:nth-child(4) {
+        coords: 10%, 58%, 90%, 80%;
+    }
+}
+/**/ /**/ /**/ /**/ /**/
+.dine {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dine h4 {
+margin: 0;
+font-size: 40px;
+}
+.dine h2 {
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 12px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.dine p {
+    font-size: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.contact {
+    background-color: #333;
+    font-size: 25px;
+    color: #ddd;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    right: 20px;
+    top: 10%;
+    right: 20px;
+}
+.back {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #404142;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+.back:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/**/ /**/ /**/ /**/ /**/
+.live {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.live h4 {
+margin: 0;
+font-size: 40px;
+}
+.live h2 {
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 12px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.live p {
+    font-size: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/**/ /**/ /**/ /**/ /**/
+.lib {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lib h4 {
+margin: 0;
+font-size: 40px;
+}
+.lib h2 {
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 12px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.lib p {
+    font-size: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/**/ /**/ /**/ /**/ /**/
+.mstr {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mstr h4 {
+margin: 0;
+font-size: 40px;
+}
+.mstr h2 {
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 12px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.mstr p {
+    font-size: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/**/ /**/ /**/ /**/ /**/
+.review {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.review p {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #404142;
+}
+.review textarea {
+    color: rgb(240, 243, 239);
+    background-color: #555;
+}
+/**/ /**/ /**/ /**/ /**/
+.Pi {
+    font-size: 30px;
+    font-style: italic;
+}
+.agr {
+    transform: scale(2.0);
+}
+.search {
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 5px;
+    color: #f0f0f0;
+}
+.search ::placeholder {
+    color: #ddd;
+}
+#search {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #555; 
+    border: 1px solid #555; 
+    color: #ddd;
+}
+@media screen and (max-width: 768px) {
+.search {
+    text-align: center;
+    padding: 10px; 
+}
+
+#search {
+    width: 100%; 
+    margin-top: 10px; 
+}
+}
+
+.form form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    color: #3b3b4f;
+    font-size: 20px;
+    padding: 30px; width: auto;
+}
+.form {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;  
+    background-size: auto;
+}
+form {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form fieldset {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+.form legend {
+    color: rgb(50, 50, 66);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.review ::placeholder{
+    color: white;
+    font-size: 20px;
+}
